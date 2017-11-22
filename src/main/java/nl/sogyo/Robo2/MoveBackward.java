@@ -10,4 +10,8 @@ public class MoveBackward implements ICommand {
     public void execute() {
         robot.moveBackward();
     }
+    
+    public void undo() {
+    	robot.moveForward();
+    }
 }

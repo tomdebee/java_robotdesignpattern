@@ -8,14 +8,19 @@ public class Player {
         ICommand moveBackward = new MoveBackward(roboy);
 
         control.setCommand(moveForward);
-        control.execute();
-
         control.setCommand(moveForward);
-        control.execute();
-
         control.setCommand(moveBackward);
-        control.execute();
-
+        control.setCommand(moveBackward);
+        control.setCommand(moveBackward);
+        
+        control.roundOf5Execute();
+        control.undo();
+        control.undo();
+        control.undo();
+        control.undo();
+        control.undo();
+        control.undo();
+        
         System.out.println();
         System.out.println("y = "+ roboy.getY());
     }

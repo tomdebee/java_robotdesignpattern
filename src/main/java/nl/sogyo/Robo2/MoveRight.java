@@ -1,17 +1,17 @@
 package nl.sogyo.Robo2;
 
-public class MoveForward implements ICommand {
+public class MoveRight implements ICommand {
 
     Robot robot;
-    public MoveForward(Robot robot){
+    public MoveRight(Robot robot){
         this.robot = robot;
     }
 
     public void execute() {
-        robot.moveForward();
+        robot.moveRight();
     }
     
     public void undo() {
-    	robot.moveBackward();
+    	robot.moveLeft();
     }
 }

@@ -12,6 +12,14 @@ public class Robot {
     public void moveBackward() {
         y -= 1;
     }
+    
+    public void moveLeft() {
+        x -= 1;
+    }
+    
+    public void moveRight() {
+        x += 1;
+    }
 
     public int getX() {
         return x;
