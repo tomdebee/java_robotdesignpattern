@@ -6,11 +6,6 @@ public class Player {
         Robot roboy = new Robot();
         ICommand moveForward = new MoveForward(roboy);
         ICommand moveBackward = new MoveBackward(roboy);
-        CommandQueue queue = new CommandQueue();
-
-        queue.addCommand(new MoveForward(roboy));
-
-
 
         control.setCommand(moveForward);
         control.execute();
